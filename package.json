@@ -1,0 +1,17 @@
+{
+  "name": "typescript-challenge-backend",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "repository": "https://github.com/tbell511/typescript-challenge-backend.git",
+  "author": "Tyler Bell <belltyler@live.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongo": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.12",
+    "@types/mongodb": "^3.6.17",
+    "@types/node": "^15.6.1"
+  }
+}
