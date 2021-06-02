@@ -4,8 +4,6 @@ import Stays from "./stays";
 const port = 3000;
 const app = express();
 
-app.use(express.json());
-
 app.use("/stays", Stays);
 
 app.listen(port, () => {
