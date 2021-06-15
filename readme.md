@@ -62,6 +62,8 @@ If you run out of time, that's okay! We have left a `NOTES.md` file for you to p
 
 Before you begin, please fork this project. If you choose to keep the repository prviate, please remember to invite a Memberstack team member as a collaborator.
 
+The `.env` file contains the Mongo DB connection string. The database contains a `sample_airbnb` database which contains a `listingsAndReviews` collection. That is where you'll find the data you need.
+
 ## Assessment
 
 Your code will be evaluated based:
