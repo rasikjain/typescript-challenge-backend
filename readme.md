@@ -66,6 +66,8 @@ The `.env` file contains the Mongo DB connection string. The database contains a
 
 Complete the above 5 tasks 🙂
 
+If you have any questions please email `tyler@memberstack.com` Please add Backend Coding Challenge in the email subject.
+
 ## Assessment
 
 Your code will be evaluated based:
