@@ -1,11 +1,26 @@
-import express from "express";
-import Stays from "./stays";
+import * as dotenv from 'dotenv';
 
-const port = 3000;
-const app = express();
+import { connect } from './db/index';
+import express from 'express';
+import Stays from './stays';
 
-app.use("/stays", Stays);
+const executeMain = async () => {
+  dotenv.config();
 
-app.listen(port, () => {
-  console.log(`server started at http://localhost:${port}`);
+  const app = express();
+
+  app.use(express.json());
+  app.use(express.urlencoded({ extended: false }));
+
+  app.use('/stays', Stays);
+
+  await connect();
+
+  app.listen(process.env.PORT, () => {
+    console.log(`server started at http://localhost:${process.env.PORT}`);
+  });
+};
+
+executeMain().catch((error) => {
+  console.log(error, 'error');
 });
