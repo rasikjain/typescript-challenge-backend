@@ -9,6 +9,7 @@
 ### TODO
 
 1) Moving the Mongodb logic and queries to different layer (repository layer) for decoupling purposes.
-2) Implement logging (info, debug)
-3) Writing Test Cases  
-4) Implement generic logic for Pagination as a reusable component.
+2) Error Handling and sending generic errors to end user.
+3) Implement logging (info, debug)
+4) Writing Test Cases  
+5) Implement generic logic for Pagination as a reusable component.
