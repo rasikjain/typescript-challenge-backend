@@ -3,6 +3,7 @@ import * as dotenv from 'dotenv';
 import { connect } from './db/index';
 import express from 'express';
 import Stays from './stays';
+import Reviews from './reviews';
 
 const executeMain = async () => {
   dotenv.config();
@@ -13,6 +14,7 @@ const executeMain = async () => {
   app.use(express.urlencoded({ extended: false }));
 
   app.use('/stays', Stays);
+  app.use('/reviews', Reviews);
 
   await connect();
 
